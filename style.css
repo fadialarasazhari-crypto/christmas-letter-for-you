@@ -1,0 +1,229 @@
+/* =====================
+   CHRISTMAS LOVE LETTER
+   Cinematic Romantic CSS
+   ===================== */
+
+/* COLOR PALETTE */
+:root {
+  --pine-green: #1F3D2B;
+  --burgundy-red: #7B1E28;
+  --midnight-blue: #1C2A3A;
+  --soft-winter-blue: #AFC7D9;
+  --warm-cream: #F6F1EB;
+  --gold-accent: #D6B97B;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, var(--midnight-blue), var(--pine-green));
+  color: var(--warm-cream);
+  overflow-x: hidden;
+}
+
+/* GLOBAL SECTION */
+section {
+  padding: 100px 10%;
+  position: relative;
+}
+
+/* ================= HERO ================= */
+#hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(28,42,58,0.7), rgba(31,61,43,0.8)),
+    url('https://images.unsplash.com/photo-1543589077-47d81606c1bf') center/cover no-repeat;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.8rem;
+  font-style: italic;
+  color: var(--warm-cream);
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--soft-winter-blue);
+  margin-bottom: 40px;
+}
+
+/* BUTTON */
+button {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, var(--gold-accent), #f0d9a6);
+  border: none;
+  padding: 14px 34px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(214,185,123,0.4);
+}
+
+/* MUSIC TOGGLE */
+#music-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  font-size: 20px;
+  background: rgba(0,0,0,0.4);
+  color: var(--warm-cream);
+  padding: 10px 14px;
+  border-radius: 50%;
+}
+
+/* ================= LOVE LETTER ================= */
+#love-letter {
+  background: linear-gradient(180deg, var(--pine-green), var(--midnight-blue));
+}
+
+.letter-wrapper {
+  max-width: 850px;
+  margin: auto;
+}
+
+#love-letter h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--gold-accent);
+}
+
+.letter-text {
+  background: rgba(246,241,235,0.08);
+  backdrop-filter: blur(8px);
+  padding: 50px;
+  border-radius: 20px;
+  line-height: 1.9;
+}
+
+.letter-text p {
+  margin-bottom: 20px;
+}
+
+.signature {
+  text-align: right;
+  margin-top: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* ================= PHOTO ================= */
+#photo-section {
+  text-align: center;
+}
+
+#photo-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.polaroid {
+  background: var(--warm-cream);
+  width: 260px;
+  padding: 15px;
+  margin: auto;
+  transform: rotate(-3deg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  color: #000;
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.caption {
+  font-family: 'Playfair Display', serif;
+  margin-top: 10px;
+}
+
+/* ================= VOUCHER ================= */
+#voucher-section {
+  background: linear-gradient(180deg, var(--midnight-blue), var(--pine-green));
+  text-align: center;
+}
+
+.voucher-card {
+  max-width: 400px;
+  margin: auto;
+  background: linear-gradient(135deg, var(--burgundy-red), var(--pine-green));
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+  transition: all 0.5s ease;
+}
+
+.voucher-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.voucher-icon {
+  font-size: 2rem;
+}
+
+.voucher-title {
+  font-size: 1.6rem;
+  margin: 15px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+/* ================= CLOSING ================= */
+#closing {
+  text-align: center;
+  padding-bottom: 140px;
+}
+
+.closing-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+}
+
+.closing-sub {
+  color: var(--soft-winter-blue);
+  margin-top: 10px;
+}
+
+.closing-sign {
+  margin-top: 30px;
+  font-style: italic;
+  color: var(--gold-accent);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  section {
+    padding: 80px 8%;
+  }
+
+  .letter-text {
+    padding: 30px;
+  }
+}
